@@ -1,25 +1,9 @@
 # Secure Text Transfer Using Diffie-Hellman Key Exchange Based On Cloud
-
-Security on cloud has been a hot topic. Even the tech giants like google and amazon spend hefty capital to strengthen their security. We, here have implemented a secure text transfer using diffie-hellman key exchange algorithm.
+In this project, implemented a simple and secure way to transfer text using the **Diffie-Hellman key exchange algorithm**, which allows two users to share a secret key safely over a public network.
 
 ## Diffie-Hellman Key Exchange
 
-One of the brute approaches for secure transfer can be that *user A* can encrypt the using a key and later the key could be shared with *user B*. This approach can work up to an extent but it always has a risk of **third-party eavesdroppping**. We needed a system in which two users, without knowing the secret key, can independently generate same key at both ends. This key could later be used to encrypt and decrypt the text. The diffie-hellman key exchange algorithm comes into picture.</br> </br>
-Diffie–Hellman key exchange (DH) is a method of securely exchanging cryptographic keys over a
-public channel and was one of the first public-key protocols named after Whitfield Diffie and
-Martin Hellman. DH is one of the earliest practical examples of public key exchange
-implemented within the field of cryptography.</br>
-In public key cryptosystem, enciphering and deciphering are governed by distinct keys, E and D,
-such that computing D from E is computationally infeasible (e.g., requiring more than 10^100
-instructions). The enciphering key E can thus be publicly disclosed without compromising the
-deciphering key D. This was the main ideology behind Diffie-Hellman Key Exchange Protocol.
-Each user of the network can, therefore, place his enciphering key in a public directory. This
-enables any user of the system to send a message to any other user enciphered in such a way that
-only the intended receiver can decipher it. As such, a public key cryptosystem is a multiple access
-cipher. A private conversation can therefore be held between any two individuals regardless of
-whether they have ever communicated before. Each one sends messages to the other enciphered in
-the receiver’s public enciphering key and deciphers the messages he receives using his own secret
-deciphering key.
+A brute-force encryption method where a key is shared later can be vulnerable to eavesdropping. **Diffie-Hellman Key Exchange** solves this by enabling two parties to generate a shared secret key independently over a public channel, without directly sharing the key. This shared key can then be used for secure communication. The protocol is one of the earliest public-key cryptographic methods and relies on mathematically hard problems, making it secure against unauthorized access during key exchange.
 
 ### Working example of Diffie-Hellman 
 
@@ -103,5 +87,3 @@ Once file is encrypted it has to be uploaded on an online directory. Another dir
 
 **NOTE**: For instance we have uploaded the screenshots of the process in dump/images.</br>
 **NOTE 2**: This hosting technique is newbie. The project can be accessed by the public IP of the instance. If you have a better approach, please let us know :')
-
-FOr any further queries please fell free to connect to us at hardikgaur@geu.ac.in or parthendo@geu.ac.in
